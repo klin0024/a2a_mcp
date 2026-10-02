@@ -1,0 +1,11 @@
+# 依賴套件的正式定義在 pyproject.toml 的 [project.dependencies]；
+# 這份檔案是給不想用 `pip install -e .` 的人跑 `pip install -r requirements.txt` 用的鏡像，
+# 內容需要跟 pyproject.toml 保持同步。
+google-adk
+google-adk[a2a]
+fastmcp
+python-dotenv
+pydantic-settings
+langchain
+langchain-google-genai
+langchain-mcp-adapters

@@ -1,0 +1,21 @@
+{
+  "name": "debate_con",
+  "description": "辯論反方 agent，針對給定的辯題提出反對、質疑的論點",
+  "url": "http://localhost:3000/a2a/debate_con",
+  "version": "1.0.0",
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "JSONRPC",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": true
+  },
+  "skills": [
+    {
+      "id": "debate_con",
+      "name": "debate_con",
+      "description": "針對辯題提出反對/質疑立場的論點、證據與反駁",
+      "tags": ["debate", "argument", "against"]
+    }
+  ]
+}

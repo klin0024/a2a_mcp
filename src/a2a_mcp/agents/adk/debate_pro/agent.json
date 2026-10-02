@@ -1,0 +1,20 @@
+{
+  "name": "debate_pro",
+  "description": "辯論正方 agent，針對給定的辯題提出支持、贊成的論點",
+  "url": "http://localhost:3000/a2a/debate_pro",
+  "version": "1.0.0",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": true,
+    "functions": true
+  },
+  "skills": [
+    {
+      "id": "debate_pro",
+      "name": "debate_pro",
+      "description": "針對辯題提出支持/贊成立場的論點、證據與反駁",
+      "tags": ["debate", "argument", "for"]
+    }
+  ]
+}

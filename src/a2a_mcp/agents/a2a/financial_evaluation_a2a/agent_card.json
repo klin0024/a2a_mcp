@@ -1,0 +1,21 @@
+{
+  "name": "financial_evaluation",
+  "description": "財務評估 agent，評估商機的成本結構、定價假設、毛利率與回本週期",
+  "url": "http://localhost:3000/a2a/financial_evaluation",
+  "version": "1.0.0",
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "JSONRPC",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "capabilities": {
+    "streaming": true
+  },
+  "skills": [
+    {
+      "id": "financial_evaluation",
+      "name": "financial_evaluation",
+      "description": "評估商機的成本結構、定價假設、毛利率與回本週期，並針對市場規模假設提出質疑",
+      "tags": ["business", "finance", "pricing", "valuation"]
+    }
+  ]
+}
