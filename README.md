@@ -94,8 +94,8 @@ cp .env.example .env
 ```
 GOOGLE_API_KEY=你的金鑰
 FASTMCP_TRANSPORT=http
-FASTMCP_HOST=127.0.0.1
-FASTMCP_PORT=8000
+FASTMCP_HOST=0.0.0.0
+FASTMCP_PORT=3000
 ```
 
 選填：用 `ADK_AGENT_NAMES`／`A2A_AGENT_NAMES`／`LANGCHAIN_AGENT_NAMES`（逗號分隔）只註冊指定的 agent，不設定則自動註冊對應目錄底下全部：
@@ -115,7 +115,7 @@ LANGCHAIN_AGENT_NAMES=debate_neutral,customer_needs
 **1. 啟動 A2A server**（`debate_con_a2a`、`financial_evaluation_a2a` 這兩個 A2A tool 背後的 agent 由它提供）：
 
 ```bash
-adk api_server --a2a --port 3000 src/a2a_mcp/agents/adk
+adk api_server --a2a --port 3001 src/a2a_mcp/agents/adk
 ```
 
 **2. 啟動 MCP server**：
@@ -124,7 +124,7 @@ adk api_server --a2a --port 3000 src/a2a_mcp/agents/adk
 python -m a2a_mcp.server
 ```
 
-啟動後 MCP endpoint 在 `http://127.0.0.1:8000/mcp`。三個掛了 Exa 的 agent 建構時會先連一次 Exa，啟動需要多等幾秒到幾十秒。
+啟動後 MCP endpoint 在 `http://127.0.0.1:3000/mcp`。三個掛了 Exa 的 agent 建構時會先連一次 Exa，啟動需要多等幾秒到幾十秒。
 
 ## 使用範例
 

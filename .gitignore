@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets — real .env files carry GOOGLE_API_KEY etc. (matches at any depth,
+# including adk_agent/*/.env); .env.example is fine to commit
+.env
+
+# ADK runtime state (sessions, artifacts) — not source, regenerated on run
+.adk/
+
+# Claude Code local state — personal permission settings and runtime locks
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Internal design notes — not meant to be committed
+DESIGN.md

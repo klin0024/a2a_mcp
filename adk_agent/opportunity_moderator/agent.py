@@ -8,7 +8,7 @@ from google.adk.tools.mcp_tool.mcp_toolset import (
 # 過濾掉同一個 server 上不相干的 debate_pro/debate_con_a2a/debate_neutral。
 mcp_toolset = MCPToolset(
     connection_params=StreamableHTTPConnectionParams(
-        url="http://localhost:8000/mcp",
+        url="http://localhost:3000/mcp",
     ),
     tool_filter=["market_analysis", "financial_evaluation_a2a", "customer_needs"],
 )

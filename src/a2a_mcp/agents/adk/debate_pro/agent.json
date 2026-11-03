@@ -1,7 +1,7 @@
 {
   "name": "debate_pro",
   "description": "辯論正方 agent，針對給定的辯題提出支持、贊成的論點",
-  "url": "http://localhost:3000/a2a/debate_pro",
+  "url": "http://localhost:3001/a2a/debate_pro",
   "version": "1.0.0",
   "defaultInputModes": ["text/plain"],
   "defaultOutputModes": ["text/plain"],

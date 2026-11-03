@@ -1,0 +1,19 @@
+# 金鑰不進 image，執行時用 --env-file / -e 傳入
+.env
+**/.env
+
+.git
+.claude
+.venv
+venv
+**/__pycache__
+**/*.py[cod]
+**/.adk
+*.egg-info
+
+# 執行不需要的檔案
+adk_agent
+docs
+images
+DESIGN.md
+README.md
